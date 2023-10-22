@@ -24,7 +24,7 @@ const getCaptcha = async () =>
     };
 };
 
-const verifyCaptcha = (answer: any, encrypted: any) => {
+const verifyCaptcha = (answer: string, encrypted: string) => {
     return bcrypt.compareSync(answer, encrypted);
 };
 
